@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.umflint.multiactivity.ActivityA">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity A"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="95dp"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/activityATextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing to see here..."
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="245dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/AtoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To B"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="379dp"
+        android:layout_alignBaseline="@+id/AtoC"
+        android:layout_alignBottom="@+id/AtoC"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/AtoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To C"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="379dp"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/AtoB"
+        android:layout_toEndOf="@+id/AtoB"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
+</RelativeLayout>
